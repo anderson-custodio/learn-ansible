@@ -1,0 +1,48 @@
+---
+- hosts: all
+  tasks:
+    - name: 'Instala o PHP5'
+      apt:
+        name: php5
+        state: latest
+      become: yes
+    - name: 'Instala o Apache2'
+      apt:
+        name: apache2
+        state: latest
+      become: yes
+    - name: 'Instala o modphp'
+      apt:
+        name: libapache2-mod-php5
+        state: latest
+      become: yes
+    - name: 'Instala o php5-gd'
+      apt:
+        name: php5-gd
+        state: latest
+      become: yes
+    - name: 'Instala o libssh2-php'
+      apt:
+        name: libssh2-php
+        state: latest
+      become: yes
+    - name: 'Instala o php5-mcrypt'
+      apt:
+        name: php5-mcrypt
+        state: latest
+      become: yes
+    - name: 'Instala o mysql-server-5.6'
+      apt:
+        name: mysql-server-5.6
+        state: latest
+      become: yes
+    - name: 'Instala o python-mysqldb'
+      apt:
+        name: python-mysqldb
+        state: latest
+      become: yes
+    - name: 'Instala o php5-mysql'
+      apt:
+        name: php5-mysql
+        state: latest
+      become: yes
