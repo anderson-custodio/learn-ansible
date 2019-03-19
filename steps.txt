@@ -27,3 +27,4 @@ vagrant ssh
 # To run a command inside the server using ansible
 ansible wordpress -u vagrant --private-key .vagrant/machines/wordpress/virtualbox/private-key -i hosts -m shell -a 'echo Hello, World'
 
+ansible-playbook -i hosts provisioning3.yml
